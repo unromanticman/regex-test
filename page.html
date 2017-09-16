@@ -1,0 +1,1444 @@
+
+
+
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head><title>
+大眾銀行 - 匯率 - 即時匯率查詢
+</title>
+
+<!--網站icon-->
+<link rel="shortcut icon" href="/Content/favicon/favicon.ico" />
+
+<!--網站meta-->
+<meta charset="utf-8" />
+<meta name="keywords" content="大眾信用卡,大眾信貸,大眾房貸,大眾貸款,大眾財富管理,大眾存款,大眾行動銀行,大眾利率,大眾匯率,大眾網路銀行,信用卡,信貸,房貸,貸款,財富管理,存款,行動銀行,利率,匯率,網路銀行" />
+<meta name="description" content="大眾銀行提供您專業完整財富管理、投資理財建議、信用卡申辦、個人信用貸款、房屋貸款、優利存款以及各項企業金融服務，協助您實踐人生中每個階段的夢想。" />
+
+<!-- Facebook -->
+<meta property="og:title" content="大眾銀行" />
+<meta property="og:name" content="大眾銀行" />
+<meta property="og:description" content="大眾銀行提供您專業完整財富管理、投資理財建議、信用卡申辦、個人信用貸款、房屋貸款、優利存款以及各項企業金融服務，協助您實踐人生中每個階段的夢想。" />
+<meta property="og:image" content="" />
+
+<!--Css-->
+<link href="/Content/css/main.css" rel="stylesheet" type="text/css" />
+<link href="/Content/Scripts/jqtransform/jqtransform.css" rel="stylesheet" type="text/css" />
+<link href="/Content/Scripts/fancybox/jquery.fancybox-1.3.1.css" rel="stylesheet" type="text/css"  media="screen" />
+<link href="/Content/css/itAdjust.css" rel="stylesheet" type="text/css" />
+
+<!--Script-->
+<!--[if lt IE 9]>
+
+<script src="/Content/Scripts/html5.js"></script>
+<script src="/Content/Scripts/forIE-CSS3.js"></script>
+<![endif]-->
+
+<script src="/Content/Scripts/jquery.js" type="text/javascript"></script>
+
+
+<script src="/Content/Scripts/fancybox/jquery.fancybox-1.3.1.js" type="text/javaScript"></script>
+<script src="/Content/Scripts/common.js" type="text/javascript"></script>
+
+
+
+    <!--GA分析開始-->
+    <script src="/Content/Scripts/ga.js" type="text/javascript"></script>
+    <!--GA分析結尾，我的下方一定要是</head>-->
+</head>
+<body>
+
+    
+    
+
+    <!-- 上方Header -->
+    <header>
+        <div class="headerTopMain">
+            <!-- 大眾Logo -->
+            <h1 class="logo"><a href="/tw/Home/Index">TCBANK 大眾銀行</a></h1>
+
+            <!-- 上標 -->
+            
+        
+        <ul class="headerTopNavUl">
+        
+            <li><a href="/tw/ServiceSite/Branch" target="_blank">服務據點</a></li>
+        
+            <li><a href="/tw/CustomerService/Apply" target="_blank">客服中心</a></li>
+        
+            <li><a href="http://tcbanknew.moneydj.com/index.asp?a=2" target="_blank">基金淨值</a></li>
+        
+            <li><a href="/tw/InterestRate/DemandDepositNTD" target="_blank">利率</a></li>
+        
+            <li><a href="/tw/ExchangeRate/Current" target="_blank">匯率</a></li>
+        
+            <li><a href="/tw/Downloading/CreditCard" target="_blank">下載專區</a></li>
+        
+            <li><a href="/tw/ActivityOverview/Index" target="_blank">活動總覽</a></li>
+        
+            <li><a href="/tw/NewsOverview/Index" target="_blank">公告總覽</a></li>
+        
+        </ul>
+
+        
+        <section class="loginBox">
+        	<ul>
+            	<li><a href="https://ibank.tcbank.com.tw/" target="_blank"></a></li>
+                <li><a href="https://corpbank.121b2b.com.tw/" target="_blank"></a></li>
+                <li><a href="https://soeasy.tcbank.com.tw/" target="_blank"></a></li>
+                <li><a href="https://www.121atm.com.tw/" target="_blank"></a></li>
+            </ul>
+            <a href="javascript:;">登入</a>
+        </section>
+            <!-- 無障礙網頁連結 -->
+            
+            <!-- 全站搜尋 -->
+            
+            <div class="headerTopNavSearch">
+            <form action="/tw/Home/Search" id="formSearch" method="post" name="formSearch">
+                <input type="text" id="searchText" name="searchText" value="站內搜尋"/>
+                <a href="javascript:DoSearch();">搜尋</a>
+                 <script type="text/javascript">
+                    $(document).ready(function () {
+                        //「站內搜尋」的文字浮水印處理
+                        $("#searchText").focus(function () {
+                            if ($(this).val() == "站內搜尋") $(this).val("");
+                        });
+                        $("#searchText").blur(function () {
+                            if ($.trim($(this).val()) == "") $(this).val("站內搜尋");
+                        });
+                    });
+                    function DoSearch() {
+                        if ($.trim($("#searchText").val()) == "" || $.trim($("#searchText").val()) == "站內搜尋") {
+                            alert("請輸入搜尋內容。");
+                            return;
+                        }
+                        $("#formSearch").submit();
+                    }
+                </script> 
+            </form>
+            </div>
+
+ 
+            <a class="TCHbtn" href="http://www.tcbank.com.hk/" target="_blank">香港分行</a>
+            <a class="applyCounterBtn" href="https://vbank.tcbank.com.tw/" target="_blank"></a>
+            <!-- 主選單 -->
+            
+        <nav>
+            <ul class="headerBottomMenu">
+            
+                <li class="current">
+                    
+                    <a href="/tw/Home/Index">個人金融</a>
+                    <ul class="current" >
+                    
+                        <li >
+                            <a href="/tw/CreditCard/Index" >信用卡</a>
+                            
+                                <div class="NavCurrent"></div>
+                                <div class="headerBottomNavSubMenu">
+                                    
+                                    
+<a class="BottomNavSubMenuImg" href="http://www.tcbank.com.tw/tw/CreditCard/Product/B0B33DA2-F262-4348-BE01-9D9C9DD8831F">
+    <img src="/FileGetting/Upload/MenuBannerCreditCard/df974055-49a1-449a-85d4-ddf50c844baf.png" width="160" height="250" alt="" />
+</a>
+
+                                    
+                                    <ul>
+                                    
+                                        <li>
+                                            <a href="/tw/CreditCard/Appropriate">適合我的信用卡</a>
+                                            
+                                            <ul>
+                                                <li><a href="/tw/CreditCard/Appropriate">我想要的優惠</a></li>
+                                            </ul>
+                                            
+                                       
+
+                                        </li>
+                                    
+                                        <li>
+                                            <a href="/tw/CreditCard/Product/874D5156-B1A6-48A2-80F7-D9D0F3D1AFCE">信用卡產品</a>
+                                            
+                                            <ul>
+                                                
+                                                <li><a href="/tw/CreditCard/Product/874D5156-B1A6-48A2-80F7-D9D0F3D1AFCE">icash愛現晶緻卡／鈦金卡</a></li>
+                                                
+                                                <li><a href="/tw/CreditCard/Product/C8045824-C565-4098-926E-BB7DEF009D1F">icash樂享晶緻卡／樂享晶緻卡</a></li>
+                                                
+                                                <li><a href="/tw/CreditCard/Product/B0B33DA2-F262-4348-BE01-9D9C9DD8831F">現賺御璽卡／iPASS現賺御璽卡</a></li>
+                                                
+                                                <li><a href="/tw/CreditCard/Product/0A4996FA-E4CE-475C-A5CA-090D8D822FA3">世界卡</a></li>
+                                                
+                                                <li><a href="/tw/CreditCard/Product/DE1B650F-41C3-4EB3-8D51-6DE1F28EF4D7">分享御璽卡／分享鈦金卡</a></li>
+                                                
+                                                <li><a href="/tw/CreditCard/Product/63DBE7B2-67D4-4FC1-9380-0A5858082505">分享卡</a></li>
+                                                
+                                                <li><a href="/tw/CreditCard/Product/7D8D5E4E-2E28-49AB-8B51-60BA53E38983">愛PASS卡      (鈦金卡／哆啦A夢晶緻卡)</a></li>
+                                                
+                                                <li><a href="/tw/CreditCard/Product/A1D8C90A-FE41-4E97-9E9A-54A47E432D83">高醫認同卡</a></li>
+                                                
+                                                <li><a href="/tw/CreditCard/Product/9DDEFDA5-23D4-4B1D-804F-3E41962911D8">錢進卡</a></li>
+                                                
+                                            </ul>
+                                        
+                                       
+
+                                        </li>
+                                    
+                                        <li>
+                                            <a href="/tw/CreditCard/Product/10B11FC7-D1D1-471C-8648-0A043D28CF97">卡友權益</a>
+                                            
+                                            <ul>
+                                                
+                                                <li><a href="/tw/CreditCard/Product/10B11FC7-D1D1-471C-8648-0A043D28CF97">網路交易安全驗證服務</a></li>
+                                                
+                                                <li><a href="/tw/CreditCard/Product/0119FDE7-171E-4D12-B86B-BBC73431CB49">市區停車優惠</a></li>
+                                                
+                                                <li><a href="/tw/CreditCard/Product/3FC63D54-CFE9-4B05-B43F-AF95C42CD14A">機場外圍停車優惠</a></li>
+                                                
+                                                <li><a href="/tw/CreditCard/Product/2FACF77B-4638-4EC7-87F5-2E19941C17A8">信用卡綜合保險</a></li>
+                                                
+                                                <li><a href="/tw/CreditCard/Product/E6D6A9BB-2E8F-4B5E-BD28-016E5D1390B9">外籍人士辦卡友善專區Credit Card</a></li>
+                                                
+                                                <li><a href="/tw/CreditCard/ProductServices">信用卡綜合服務</a></li>
+                                                
+                                                <li><a href="/tw/CreditCard/ProductQAs">常見問題</a></li>
+                                                
+                                            </ul>
+                                        
+                                       
+
+                                        </li>
+                                    
+                                        <li>
+                                            <a href="/tw/CreditCard/Product/DB10384C-CA3F-4CBE-A83D-3E6D8ACBF24D">信用卡理財</a>
+                                            
+                                            <ul>
+                                                
+                                                <li><a href="/tw/CreditCard/Product/DB10384C-CA3F-4CBE-A83D-3E6D8ACBF24D">帳單樂分期</a></li>
+                                                
+                                                <li><a href="/tw/CreditCard/Product/05D8A65C-10C6-4198-A733-CD6CA0694770">消費分期樂</a></li>
+                                                
+                                                <li><a href="/tw/CreditCard/Product/4AEF3549-FDCC-4B1F-A282-9EAAF1656931">如意金</a></li>
+                                                
+                                                <li><a href="/tw/CreditCard/Product/FE858DE7-5F27-4BAE-8C74-FBF7198A2AF7">預借現金</a></li>
+                                                
+                                            </ul>
+                                        
+                                       
+
+                                        </li>
+                                    
+                                        <li>
+                                            <a href="/tw/CreditCard/RewardShop/416AFDDC-E932-4C30-A6B3-DD1C2D1F17B4">優惠商店</a>
+                                            
+                                            <ul>
+                                                
+                                                <li><a href="/tw/CreditCard/RewardShop/416AFDDC-E932-4C30-A6B3-DD1C2D1F17B4">生活休閒</a></li>
+                                                
+                                                <li><a href="/tw/CreditCard/RewardShop/34516499-7143-4D1C-9E10-B4CCFD4F54B8">百貨購物</a></li>
+                                                
+                                                <li><a href="/tw/CreditCard/RewardShop/CEE4B3B0-DF90-49D2-9BFD-C0F92CC47BE8">美食饗宴</a></li>
+                                                
+                                                <li><a href="/InstallmentStore/index.html" target="_blank">分期特店</a></li>
+                                                
+                                            </ul>
+                                        
+                                       
+
+                                        </li>
+                                    
+                                        <li>
+                                            <a href="/tw/CreditCard/Activity/683B090A-7D55-4E85-A17D-9D5EDD774E5F">優惠活動</a>
+                                            
+                                            <ul>
+                                                
+                                                <li><a href="/tw/CreditCard/Activity">總覽</a></li>
+                                                
+                                                <li><a href="/tw/CreditCard/Activity/683B090A-7D55-4E85-A17D-9D5EDD774E5F">全卡別適用</a></li>
+                                                
+                                                <li><a href="/tw/CreditCard/Activity/4C4DF71D-93CE-48D0-9A0C-2EFD33DA34C5">愛現卡專屬</a></li>
+                                                
+                                                <li><a href="/tw/CreditCard/Activity/9E6D4697-5208-4F79-A854-AB149CDCEB70">愛PASS卡專屬</a></li>
+                                                
+                                                <li><a href="/tw/CreditCard/Activity/0C63A5E3-21BE-4481-8634-930213EB996A">世界卡專屬</a></li>
+                                                
+                                                <li><a href="/tw/CreditCard/Activity/1E73DD98-05BC-4314-88E3-6DEB1A3BC196">現賺卡專屬</a></li>
+                                                
+                                                <li><a href="/tw/CreditCard/Activity/E5D214C4-0125-4F17-95A2-7D334F78A731">分享卡專屬</a></li>
+                                                
+                                                <li><a href="/tw/CreditCard/Activity/DEE1FD99-0AB6-491A-B17B-F5E60E7A439D">樂享卡專屬</a></li>
+                                                
+                                                <li><a href="/tw/CreditCard/Activity/A3420B9B-D45C-4DFE-95AD-48D15898E4B9">iPASS一卡通聯名卡</a></li>
+                                                
+                                                <li><a href="/tw/CreditCard/Activity/E88337AC-4F11-4AA5-B9DD-44EF7F2C1B4E">icash聯名卡專屬</a></li>
+                                                
+                                                <li><a href="/tw/CreditCard/Activity/E21242D8-7AF9-41BF-A045-1AF71213EDDF">國際組織優惠</a></li>
+                                                
+                                                <li><a href="http://www.tcbank.com.tw/Activity/CreditCard/ActivityRegistration/index.html"  target="_blank">活動登錄專區</a></li>
+                                                
+                                            </ul>
+                                        
+                                       
+
+                                        </li>
+                                    
+                                        <li>
+                                            <a href="/tw/CreditCard/News">公告事項</a>
+                                            
+                                            <ul>
+                                                
+                                                <li><a href="/tw/CreditCard/News">公告事項</a></li>
+                                                
+                                            </ul>
+                                        
+                                       
+
+                                        </li>
+                                    
+                                    </ul>
+                                </div>
+                            
+                        </li>
+                    
+                        <li >
+                            <a href="/tw/Loan/Index" >貸款</a>
+                            
+                                <div class="NavCurrent"></div>
+                                <div class="headerBottomNavSubMenu">
+                                    
+                                    
+<a class="BottomNavSubMenuImg" href="/tw/Loan/Product/9E434DFE-675A-4D78-87A9-6A9F412D5FF6">
+    <img src="/FileGetting/Upload/MenuBannerLoan/9da8d734-863f-4226-81e1-5443670fc428.png" width="160" height="250" alt="" />
+</a>
+
+                                    
+                                    <ul>
+                                    
+                                        <li>
+                                            <a href="/tw/Loan/Appropriate">適合我的貸款</a>
+                                            
+                                            <ul>
+                                                <li><a href="/tw/Loan/Appropriate">我的貸款目的</a></li>
+                                            </ul>
+                                            
+                                       
+
+                                        </li>
+                                    
+                                        <li>
+                                            <a href="/tw/Loan/Product/2B715C58-FF3F-449B-808B-2EF2198BBB84">信用貸款</a>
+                                            
+                                            <ul>
+                                                
+                                                <li><a href="/tw/Loan/Product/2B715C58-FF3F-449B-808B-2EF2198BBB84">分期型信貸</a></li>
+                                                
+                                            </ul>
+                                        
+                                       
+
+                                        </li>
+                                    
+                                        <li>
+                                            <a href="/tw/Loan/Product/1BCFB674-0F93-41D0-A5A8-10D4783C84C2">房屋貸款</a>
+                                            
+                                            <ul>
+                                                
+                                                <li><a href="/tw/Loan/Product/1BCFB674-0F93-41D0-A5A8-10D4783C84C2">指數型房貸</a></li>
+                                                
+                                                <li><a href="/tw/Loan/Product/5DFCE21D-600C-499D-A8EC-FDE30D02E04E">政府優惠房貸</a></li>
+                                                
+                                                <li><a href="/tw/Loan/Foreclosures">銀拍屋專區</a></li>
+                                                
+                                            </ul>
+                                        
+                                       
+
+                                        </li>
+                                    
+                                        <li>
+                                            <a href="/tw/Loan/Product/12B1E3C8-A336-478B-BD93-EE8959EAB8AD">理財型房貸</a>
+                                            
+                                            <ul>
+                                                
+                                                <li><a href="/tw/Loan/Product/12B1E3C8-A336-478B-BD93-EE8959EAB8AD">回復型房貸</a></li>
+                                                
+                                                <li><a href="/tw/Loan/Product/9E434DFE-675A-4D78-87A9-6A9F412D5FF6">Home+靈活家房貸</a></li>
+                                                
+                                            </ul>
+                                        
+                                       
+
+                                        </li>
+                                    
+                                        <li>
+                                            <a href="javascript:;">展業貸款</a>
+                                            
+                                       
+
+                                        </li>
+                                    
+                                        <li>
+                                            <a href="/tw/Loan/Activity">最新優惠及公告</a>
+                                            
+                                            <ul>
+                                                
+                                                <li><a href="/tw/Loan/Activity">最新優惠</a></li>
+                                                
+                                                <li><a href="/tw/Loan/News">公告事項</a></li>
+                                                
+                                            </ul>
+                                        
+                                       
+
+                                        </li>
+                                    
+                                    </ul>
+                                </div>
+                            
+                        </li>
+                    
+                        <li >
+                            <a href="/tw/Investment/Index" >投資理財</a>
+                            
+                                <div class="NavCurrent"></div>
+                                <div class="headerBottomNavSubMenu">
+                                    
+                                    
+<a class="BottomNavSubMenuImg" href="/tw/Investment/Product/BD5898C5-AB81-42AA-B77E-E6D9CDBBE18A">
+    <img src="/FileGetting/Upload/MenuBannerInvestment/90ead4de-449a-486e-8402-da89a318a5a8.png" width="160" height="250" alt="" />
+</a>
+
+                                    
+                                    <ul>
+                                    
+                                        <li>
+                                            <a href="/tw/Investment/DailyNews">理財規劃</a>
+                                            
+                                            <ul>
+                                                
+                                                <li><a href="/tw/Investment/DailyNews">每日必看</a></li>
+                                                
+                                                <li><a href="/tw/Investment/ExpertAdvice">專家的話</a></li>
+                                                
+                                                <li><a href="/tw/Investment/Weather">金融市場氣象台</a></li>
+                                                
+                                                <li><a href="http://tcbanknew.moneydj.com/index.asp?a=1" target="_blank">財經資訊</a></li>
+                                                
+                                                <li><a href="http://tcbanknew.moneydj.com/index.asp?a=2" target="_blank">基金/ETF搜尋</a></li>
+                                                
+                                                <li><a href="http://tcbanknew.moneydj.com/index.asp?a=3" target="_blank">基金/ETF排行榜</a></li>
+                                                
+                                                <li><a href="http://tcbanknew.moneydj.com/index.asp?a=4" target="_blank">基金/ETF介紹</a></li>
+                                                
+                                                <li><a href="http://tcbanknew.moneydj.com/index.asp?a=5" target="_blank">金融商品報價</a></li>
+                                                
+                                            </ul>
+                                        
+                                       
+
+                                        </li>
+                                    
+                                        <li>
+                                            <a href="/tw/Investment/Product/344BBB53-69B3-4548-A8A3-3667F3C7E960">投資方式</a>
+                                            
+                                            <ul>
+                                                
+                                                <li><a href="/tw/Investment/Product/344BBB53-69B3-4548-A8A3-3667F3C7E960">單筆申購</a></li>
+                                                
+                                                <li><a href="/tw/Investment/Product/EBBBCA0F-2E8B-48CD-9185-A94AEED8C1E5">定期(不)定額</a></li>
+                                                
+                                                <li><a href="/tw/Investment/Product/BD5898C5-AB81-42AA-B77E-E6D9CDBBE18A">Fund+好投家</a></li>
+                                                
+                                                <li><a href="/tw/Investment/Product/B0ACAB57-A980-4FAD-BAD7-46E006107FD5">ETF</a></li>
+                                                
+                                            </ul>
+                                        
+                                       
+
+                                        </li>
+                                    
+                                        <li>
+                                            <a href="/tw/Investment/Product/19E767E8-A180-432E-9082-9F771ACEBD07">投資商品</a>
+                                            
+                                            <ul>
+                                                
+                                                <li><a href="/tw/Investment/Product/19E767E8-A180-432E-9082-9F771ACEBD07">基金</a></li>
+                                                
+                                                <li><a href="/tw/Investment/Product/22315408-D9BB-47B0-966F-2BB8BE1A4BF5">次級市場海外債券</a></li>
+                                                
+                                                <li><a href="/tw/Investment/Product/F23F96FB-719E-48BA-9B1D-4D0C816931B5">雙元優利投資</a></li>
+                                                
+                                                <li><a href="/tw/Investment/Product/3CA488FD-9135-4C11-8C63-5427552C3D35">組合式商品</a></li>
+                                                
+                                            </ul>
+                                        
+                                       
+
+                                        </li>
+                                    
+                                        <li>
+                                            <a href="javascript:;">保險商品</a>
+                                            
+                                       
+
+                                        </li>
+                                    
+                                        <li>
+                                            <a href="/tw/Investment/LifePlan/House">人生規劃</a>
+                                            
+                                            <ul>
+                                                
+                                                <li><a href="/tw/Investment/LifePlan/House">買房換屋</a></li>
+                                                
+                                                <li><a href="/tw/Investment/LifePlan/Business">創業圓夢</a></li>
+                                                
+                                                <li><a href="/tw/Investment/LifePlan/Education">教育基金</a></li>
+                                                
+                                                <li><a href="/tw/Investment/LifePlan/Retirement">樂活退休</a></li>
+                                                
+                                            </ul>
+                                        
+                                       
+
+                                        </li>
+                                    
+                                        <li>
+                                            <a href="/tw/Investment/Activity">優惠活動及公告</a>
+                                            
+                                            <ul>
+                                                
+                                                <li><a href="/tw/Investment/Activity">優惠活動</a></li>
+                                                
+                                                <li><a href="/tw/Investment/News">公告事項</a></li>
+                                                
+                                            </ul>
+                                        
+                                       
+
+                                        </li>
+                                    
+                                    </ul>
+                                </div>
+                            
+                        </li>
+                    
+                        <li >
+                            <a href="/tw/Deposit/Index" >存款</a>
+                            
+                                <div class="NavCurrent"></div>
+                                <div class="headerBottomNavSubMenu">
+                                    
+                                    
+<a class="BottomNavSubMenuImg" href="javascript:;">
+    <img src="/Content/images/MenuBannerBlank.png" width="160" height="250" alt="" />
+</a>
+
+                                    
+                                    <ul>
+                                    
+                                        <li>
+                                            <a href="/tw/Deposit/Product/7A5546D4-6818-4DBD-B25D-7E08833E955F">臺幣活期性存款</a>
+                                            
+                                            <ul>
+                                                
+                                                <li><a href="/tw/Deposit/Product/7A5546D4-6818-4DBD-B25D-7E08833E955F">結圓帳戶(即日起停止接受新申請此帳戶)</a></li>
+                                                
+                                                <li><a href="/tw/Deposit/Product/8D1E4C69-72E8-459A-A1FF-DF5E2FE75476">利優帳戶(即日起停止接受新申請此帳戶)</a></li>
+                                                
+                                                <li><a href="/tw/Deposit/Product/119001B3-5D88-4EDB-97D1-324B07F18F48">利利高升(即日起停止接受新申請此帳戶)</a></li>
+                                                
+                                                <li><a href="/tw/Deposit/Product/1081DB88-8F21-47C1-B0A8-4F150C82255F">珍愛帳戶(即日起停止接受新申請此帳戶)</a></li>
+                                                
+                                                <li><a href="/tw/Deposit/Product/0B3E2E49-9246-4036-85C2-3996D7BEF4FF">寶貝帳戶(即日起停止接受新申請此帳戶)</a></li>
+                                                
+                                                <li><a href="/tw/Deposit/Product/93673631-ED96-46A0-AB52-6D29D0F978B1">活期(儲)存款</a></li>
+                                                
+                                                <li><a href="/tw/Deposit/Product/872DB928-2D5E-499D-80FF-2AFCCC1FA3D3">支票存款</a></li>
+                                                
+                                                <li><a href="/tw/Deposit/Product/4E5D321C-DCC6-4794-83A8-32168EB68494">薪資轉帳戶</a></li>
+                                                
+                                                <li><a href="/tw/Deposit/Product/ECB31E8A-8326-40F3-8912-53B42C40F6E5">證券儲蓄帳戶</a></li>
+                                                
+                                                <li><a href="/tw/Deposit/Product/692371F7-08CF-4CD6-9C62-9B08E38EAA22">CASA+管大師(即日起停止新申請此帳戶)</a></li>
+                                                
+                                            </ul>
+                                        
+                                       
+
+                                        </li>
+                                    
+                                        <li>
+                                            <a href="/tw/Deposit/Product/45B64D7E-7B13-40D6-945E-EAD6F2F13227">臺幣定期性存款</a>
+                                            
+                                            <ul>
+                                                
+                                                <li><a href="/tw/Deposit/Product/45B64D7E-7B13-40D6-945E-EAD6F2F13227">定期存款</a></li>
+                                                
+                                                <li><a href="/tw/Deposit/Product/38D194C9-2A98-46A6-91DF-B32634F40815">定期儲蓄存款</a></li>
+                                                
+                                                <li><a href="/tw/Deposit/Product/010935D5-D52F-457F-A76F-E42F42FFB0DB">可轉讓定期存單</a></li>
+                                                
+                                                <li><a href="/tw/Deposit/DepositsInterestTrial">利息試算</a></li>
+                                                
+                                            </ul>
+                                        
+                                       
+
+                                        </li>
+                                    
+                                        <li>
+                                            <a href="/tw/Deposit/Product/DCB6C389-9015-45EF-94DE-07A6CC1B673C">外幣存款</a>
+                                            
+                                            <ul>
+                                                
+                                                <li><a href="/tw/Deposit/Product/DCB6C389-9015-45EF-94DE-07A6CC1B673C">活期存款</a></li>
+                                                
+                                                <li><a href="/tw/Deposit/Product/F7BF7734-AD6A-48CE-928F-042684DD609F">定期存款</a></li>
+                                                
+                                            </ul>
+                                        
+                                       
+
+                                        </li>
+                                    
+                                        <li>
+                                            <a href="/tw/Deposit/Product/99EA0E81-289E-4F35-99A5-B2D428647773">人民幣存款</a>
+                                            
+                                            <ul>
+                                                
+                                                <li><a href="/tw/Deposit/Product/99EA0E81-289E-4F35-99A5-B2D428647773">人民幣存款</a></li>
+                                                
+                                            </ul>
+                                        
+                                       
+
+                                        </li>
+                                    
+                                        <li>
+                                            <a href="/tw/Deposit/Product/E9801978-3D26-4F74-8ABD-2C980D4AB955">Visa金融卡</a>
+                                            
+                                            <ul>
+                                                
+                                                <li><a href="/tw/Deposit/Product/E9801978-3D26-4F74-8ABD-2C980D4AB955">大眾有餘Debit卡</a></li>
+                                                
+                                            </ul>
+                                        
+                                       
+
+                                        </li>
+                                    
+                                        <li>
+                                            <a href="/tw/Deposit/Product/E42473EB-94C0-4D61-8112-4309D5EFDEBA">西聯匯款</a>
+                                            
+                                            <ul>
+                                                
+                                                <li><a href="/tw/Deposit/Product/E42473EB-94C0-4D61-8112-4309D5EFDEBA">西聯匯款</a></li>
+                                                
+                                            </ul>
+                                        
+                                       
+
+                                        </li>
+                                    
+                                        <li>
+                                            <a href="/tw/Deposit/Activity">最新優惠及公告</a>
+                                            
+                                            <ul>
+                                                
+                                                <li><a href="/tw/Deposit/Activity">最新優惠</a></li>
+                                                
+                                                <li><a href="/tw/Deposit/News">公告事項</a></li>
+                                                
+                                            </ul>
+                                        
+                                       
+
+                                        </li>
+                                    
+                                    </ul>
+                                </div>
+                            
+                        </li>
+                    
+                        <li >
+                            <a href="/tw/WealthManagement/Index" >財富管理</a>
+                            
+                                <div class="NavCurrent"></div>
+                                <div class="headerBottomNavSubMenu">
+                                    
+                                    
+<a class="BottomNavSubMenuImg" href="/tw/WealthManagement/Product/0FB9CD15-5C1D-4F1A-AD93-BA606F26CFF0">
+    <img src="/FileGetting/Upload/MenuBannerWealthManagement/46acf47f-4da2-470b-a5c4-8c3845036c27.png" width="160" height="250" alt="" />
+</a>
+
+                                    
+                                    <ul>
+                                    
+                                        <li>
+                                            <a href="/tw/WealthManagement/Product/A4AABF67-B66F-428D-A31A-9AD60C80AF5F">服務介紹</a>
+                                            
+                                            <ul>
+                                                
+                                                <li><a href="/tw/WealthManagement/Product/A4AABF67-B66F-428D-A31A-9AD60C80AF5F">千萬理財</a></li>
+                                                
+                                                <li><a href="/tw/WealthManagement/Product/C4FD12CF-4BDB-439D-985C-B63763173CB4">致富理財</a></li>
+                                                
+                                                <li><a href="/tw/WealthManagement/Product/0FB9CD15-5C1D-4F1A-AD93-BA606F26CFF0">貴賓理財</a></li>
+                                                
+                                                <li><a href="/tw/WealthManagement/Product/3A5A7CF6-E26E-4990-B29E-2E2593953209">菁英理財</a></li>
+                                                
+                                                <li><a href="/tw/WealthManagement/Product/4E81F025-9D00-456E-B80A-C67CA436AB11">千萬家庭</a></li>
+                                                
+                                                <li><a href="/tw/WealthManagement/Product/673B93A5-C53D-4E31-B872-0329B9EAA809">致富家庭</a></li>
+                                                
+                                            </ul>
+                                        
+                                       
+
+                                        </li>
+                                    
+                                        <li>
+                                            <a href="/tw/WealthManagement/Activity">優惠活動</a>
+                                            
+                                            <ul>
+                                                
+                                                <li><a href="/tw/WealthManagement/Activity">優惠活動</a></li>
+                                                
+                                                <li><a href="http://www.tcbank.com.tw/Activity/CreditCard/ActivityRegistration/index.html"  target="_blank">活動登錄專區</a></li>
+                                                
+                                            </ul>
+                                        
+                                       
+
+                                        </li>
+                                    
+                                        <li>
+                                            <a href="/tw/WealthManagement/News">公告事項</a>
+                                            
+                                            <ul>
+                                                
+                                                <li><a href="/tw/WealthManagement/News">公告事項</a></li>
+                                                
+                                            </ul>
+                                        
+                                       
+
+                                        </li>
+                                    
+                                    </ul>
+                                </div>
+                            
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+                <li>
+                    
+                    <a href="/tw/EnterpriseFinance/Index">法人金融</a>
+                    <ul class="NavUl_2" >
+                    
+                        <li >
+                            <a href="/tw/EnterpriseFinance/ProductType/5CAFB575-477C-4A89-8B4B-9F6DFFFA7D65" >現金管理</a>
+                            
+                                <div class="NavCurrent"></div>
+                                <div class="headerBottomNavSubMenu">
+                                    
+                                    
+<a class="BottomNavSubMenuImg" href="javascript:;">
+    <img src="/Content/images/MenuBannerBlank.png" width="160" height="250" alt="" />
+</a>
+
+                                    
+                                    <ul>
+                                    
+                                        <li>
+                                            <a href="/tw/EnterpriseFinance/Product/B5AFCB0E-0A12-4B72-884B-4F65F9FF51B0">付款服務</a>
+                                            
+                                       
+
+                                        </li>
+                                    
+                                        <li>
+                                            <a href="/tw/EnterpriseFinance/Product/1132097A-C6DC-4677-9D5A-372743F2A22E">收款服務</a>
+                                            
+                                       
+
+                                        </li>
+                                    
+                                    </ul>
+                                </div>
+                            
+                        </li>
+                    
+                        <li >
+                            <a href="/tw/EnterpriseFinance/ProductType/8DC0B827-6958-469F-8C20-C4F76F19B76D" >應收帳款承購</a>
+                            
+                        </li>
+                    
+                        <li >
+                            <a href="/tw/EnterpriseFinance/ProductType/4A27AD31-D1E3-49DC-BE9F-A7D48B2D149C" >企業授信</a>
+                            
+                                <div class="NavCurrent"></div>
+                                <div class="headerBottomNavSubMenu">
+                                    
+                                    
+<a class="BottomNavSubMenuImg" href="javascript:;">
+    <img src="/Content/images/MenuBannerBlank.png" width="160" height="250" alt="" />
+</a>
+
+                                    
+                                    <ul>
+                                    
+                                        <li>
+                                            <a href="/tw/EnterpriseFinance/Product/68622B13-7E3A-436E-9127-86296127A258">授信服務</a>
+                                            
+                                       
+
+                                        </li>
+                                    
+                                        <li>
+                                            <a href="/tw/EnterpriseFinance/Product/AB750E45-488C-42B2-B167-1764380E96CD">聯貸業務</a>
+                                            
+                                       
+
+                                        </li>
+                                    
+                                    </ul>
+                                </div>
+                            
+                        </li>
+                    
+                        <li >
+                            <a href="/tw/EnterpriseFinance/ProductType/D97D2B06-AEE7-48EE-B620-C8C24F73BA51" >外匯及貿融</a>
+                            
+                                <div class="NavCurrent"></div>
+                                <div class="headerBottomNavSubMenu">
+                                    
+                                    
+<a class="BottomNavSubMenuImg" href="javascript:;">
+    <img src="/Content/images/MenuBannerBlank.png" width="160" height="250" alt="" />
+</a>
+
+                                    
+                                    <ul>
+                                    
+                                        <li>
+                                            <a href="/tw/EnterpriseFinance/Product/274F24D7-D7AA-43E0-A028-100DF2FFD299">貿易中間商</a>
+                                            
+                                       
+
+                                        </li>
+                                    
+                                    </ul>
+                                </div>
+                            
+                        </li>
+                    
+                        <li >
+                            <a href="/tw/EnterpriseFinance/ProductType/D82FB637-31D5-4372-8F1D-8004254EA157" >法人信託業務</a>
+                            
+                                <div class="NavCurrent"></div>
+                                <div class="headerBottomNavSubMenu">
+                                    
+                                    
+<a class="BottomNavSubMenuImg" href="javascript:;">
+    <img src="/Content/images/MenuBannerBlank.png" width="160" height="250" alt="" />
+</a>
+
+                                    
+                                    <ul>
+                                    
+                                        <li>
+                                            <a href="javascript:;">信託查詢</a>
+                                            
+                                            <ul>
+                                                
+                                                <li><a href="/tw/EnterpriseFinance/TrustSearchLifeBeforeDeath">生前契約信託</a></li>
+                                                
+                                                <li><a href="/tw/EnterpriseFinance/TrustSearchEstate">不動產開發暨價金信託</a></li>
+                                                
+                                            </ul>
+                                        
+                                       
+
+                                        </li>
+                                    
+                                    </ul>
+                                </div>
+                            
+                        </li>
+                    
+                        <li >
+                            <a href="/tw/EnterpriseFinance/ProductType/89AE8F0F-A210-4E60-96E3-2E7A901F52B4" >金融行銷業務</a>
+                            
+                        </li>
+                    
+                        <li >
+                            <a href="/tw/EnterpriseFinance/ProductType/973EFD1A-3400-47A0-B10F-1892D44B3821" >中小企業專區</a>
+                            
+                        </li>
+                    
+                        <li >
+                            <a href="/tw/EnterpriseFinance/ActivityAndNews" >最新消息及公告</a>
+                            
+                                <div class="NavCurrent"></div>
+                                <div class="headerBottomNavSubMenu">
+                                    
+                                    
+<a class="BottomNavSubMenuImg" href="javascript:;">
+    <img src="/Content/images/MenuBannerBlank.png" width="160" height="250" alt="" />
+</a>
+
+                                    
+                                    <ul>
+                                    
+                                        <li>
+                                            <a href="/tw/EnterpriseFinance/Activity">最新消息</a>
+                                            
+                                       
+
+                                        </li>
+                                    
+                                        <li>
+                                            <a href="/tw/EnterpriseFinance/News">公告事項</a>
+                                            
+                                       
+
+                                        </li>
+                                    
+                                    </ul>
+                                </div>
+                            
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+                <li>
+                    
+                    <a href="/tw/ElectronicFinance/Index">電子金融</a>
+                    <ul class="NavUl_2" style='width:1100px;'>
+                    
+                        <li >
+                            <a href="/tw/ElectronicFinance/ProductType/CD8F6747-883F-41B6-94CC-9180387A53F0" >個人網路銀行</a>
+                            
+                        </li>
+                    
+                        <li style='width:165px;'>
+                            <a href="/tw/ElectronicFinance/ProductType/AFDB0280-BB63-4EEC-AEE6-801837125C55" style='width:160px;'>企業現金管理平台</a>
+                            
+                        </li>
+                    
+                        <li >
+                            <a href="/tw/ElectronicFinance/ProductType/BC02F0A5-83EF-41FF-A5A5-236AAFF22851" >WebATM</a>
+                            
+                        </li>
+                    
+                        <li >
+                            <a href="/tw/ElectronicFinance/ProductType/94319CFB-C97A-49DC-811C-A0E34B48F487" >行動銀行</a>
+                            
+                        </li>
+                    
+                        <li >
+                            <a href="/tw/ElectronicFinance/ProductType/07FD584E-8C8C-4D72-8DA1-CB4023B93A4A" >繳費入口網</a>
+                            
+                        </li>
+                    
+                        <li >
+                            <a href="/tw/ElectronicFinance/ProductType/74D85692-037D-4CA4-90B1-B4F67B33D889" >商店收單服務</a>
+                            
+                        </li>
+                    
+                        <li >
+                            <a href="/tw/ElectronicFinance/Activity" >最新消息</a>
+                            
+                        </li>
+                    
+                        <li >
+                            <a href="/tw/ElectronicFinance/News" >公告事項</a>
+                            
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            </ul>
+        </nav>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                //目前第一層的選取功能，不再另外導頁
+                //$(".headerBottomMenu li.current").children("a").attr("href", "javascript:;");
+            });
+        </script>
+        </div>
+    
+        <!-- 下拉選單白色背景 -->
+        <div class="headerBottomNavSubBg"></div>
+
+        <!-- header下方陰影 -->
+	    <div class="headerShadow"></div>
+    </header>
+
+    <!-- 下拉選單黑色背景 -->
+    <div class="headerBottomNavBlackBg"></div>
+
+    <!-- 內容區塊 -->
+    <div class="content contentPaddingTopLess">
+        
+    
+    <div class="contentKv">
+        <img src="/Content/images/KV/KvExchangeRate.jpg" alt="" />
+    </div>
+
+    
+    <div class="contentWrapper">
+        <div class="contentMain">
+            
+            
+            <section class="breadCrumb">
+                <ul>
+                    <li><a href="/tw/Home/Index">首頁</a></li>
+                  
+
+                    <li><a href="javascript:;">匯率</a></li>
+                  
+
+                    <li><a href="/tw/ExchangeRate/Current">即時匯率查詢</a></li>
+                  
+                </ul>
+            </section>
+
+            
+            <div class="contentMainL">
+                
+                
+    <aside>
+    
+        <h3>匯率</h3>
+        <ul>
+        
+        
+                
+                <li class="current">
+                    <a href="/tw/ExchangeRate/Current">即時匯率查詢</a>
+                
+                </li>
+             
+        
+                
+                <li >
+                    <a href="/tw/ExchangeRate/History">歷史匯率查詢</a>
+                
+                </li>
+             
+        </ul>
+        <img src="/Content/images/asideBottom_bg.png" width="238" height="14" alt="">
+   
+    </aside>
+            </div>
+
+            
+            <div class="contentMainR">
+            	<!-- commonContent -->
+                <div class="commonContent">
+                	<div class="commonContentMain">
+                    	<!-- commonContentH2 -->
+                        <h2 class="commonContentH2 bottom25">即時匯率查詢</h2>                        
+                        <!-- commonContentH2 End -->
+                        <!-- commonWrapper -->
+                      <div class="commonWrapper commonWrapperPaddingTop">                        	
+                            <!-- updateDate --><!--  更新時間 -->
+                            <div class="activeBox updateDate">
+                                <img src="/Content/images/updateDate_bg.png" width="85" height="25" alt="">
+                                <p><strong>2017-09-15 19:00:04</strong></p>
+                            </div>
+                            <!-- updateDate End -->
+                          	<p class="tableExplanation">本表僅供參考，實際利率以各營業單位為準。</p>
+                            <h4 class="table_title">國際匯率行情</h4>
+                            <table class="table_typle3 top0" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <th rowspan="2" class="width_150">幣別</th>
+                                <th rowspan="2" class="width_100">代號</th>
+                                <th colspan="2" class="width_200">現鈔</th>
+                                <th colspan="2" class="width_200">即期</th>
+                              </tr>
+                                <th>買入</th>
+                                <th>賣出</th>
+                                <th>買入</th>
+                                <th>賣出</th>
+                              </tr>
+                              
+                              <tr class="odd">
+                                    
+                                <td>美元</td>
+                                <td>USD</td>
+                                <td>29.8540</td>
+                                <td>30.3100</td>
+                                <td>29.9840</td>
+                                <td>30.1800</td>
+                              </tr>
+                              
+                              <tr class="">
+                                    
+                                <td>日圓</td>
+                                <td>JPY</td>
+                                <td>0.2670</td>
+                                <td>0.2740</td>
+                                <td>0.2690</td>
+                                <td>0.2719</td>
+                              </tr>
+                              
+                              <tr class="odd">
+                                    
+                                <td>港幣</td>
+                                <td>HKD</td>
+                                <td>3.7843</td>
+                                <td>3.9153</td>
+                                <td>3.8132</td>
+                                <td>3.8850</td>
+                              </tr>
+                              
+                              <tr class="">
+                                    
+                                <td>歐元</td>
+                                <td>EUR</td>
+                                <td>35.4341</td>
+                                <td>36.4603</td>
+                                <td>35.7945</td>
+                                <td>36.0988</td>
+                              </tr>
+                              
+                              <tr class="odd">
+                                    
+                                <td>人民幣</td>
+                                <td>CNY</td>
+                                <td>4.5122</td>
+                                <td>4.6857</td>
+                                <td>4.5567</td>
+                                <td>4.6388</td>
+                              </tr>
+                              
+                              <tr class="">
+                                    
+                                <td>澳幣</td>
+                                <td>AUD</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>23.9912</td>
+                                <td>24.2547</td>
+                              </tr>
+                              
+                              <tr class="odd">
+                                    
+                                <td>加拿大幣</td>
+                                <td>CAD</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>24.6524</td>
+                                <td>24.8618</td>
+                              </tr>
+                              
+                              <tr class="">
+                                    
+                                <td>瑞士法郎</td>
+                                <td>CHF</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>31.1685</td>
+                                <td>31.4805</td>
+                              </tr>
+                              
+                              <tr class="odd">
+                                    
+                                <td>英鎊</td>
+                                <td>GBP</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>40.6690</td>
+                                <td>41.0521</td>
+                              </tr>
+                              
+                              <tr class="">
+                                    
+                                <td>馬來亞幣</td>
+                                <td>MYR</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                              </tr>
+                              
+                              <tr class="odd">
+                                    
+                                <td>紐西蘭幣</td>
+                                <td>NZD</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>21.7536</td>
+                                <td>22.0130</td>
+                              </tr>
+                              
+                              <tr class="">
+                                    
+                                <td>瑞典克郎</td>
+                                <td>SEK</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>3.7375</td>
+                                <td>3.8227</td>
+                              </tr>
+                              
+                              <tr class="odd">
+                                    
+                                <td>新加坡幣</td>
+                                <td>SGD</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>22.2524</td>
+                                <td>22.4985</td>
+                              </tr>
+                              
+                              <tr class="">
+                                    
+                                <td>泰國銖</td>
+                                <td>THB</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>0.8992</td>
+                                <td>0.9192</td>
+                              </tr>
+                              
+                              <tr class="odd">
+                                    
+                                <td>美元【國際快捷匯款】</td>
+                                <td>USDW</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>29.8040</td>
+                                <td>30.3600</td>
+                              </tr>
+                              
+                              <tr class="">
+                                    
+                                <td>南非幣</td>
+                                <td>ZAR</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>2.2507</td>
+                                <td>2.3108</td>
+                              </tr>
+                              
+                            </table>
+                        </div>
+                        <!-- commonWrapper End -->
+                        <!-- commonContentBottom -->
+                		<div class="commonContentBottom"></div>
+                		<!-- commonContentBottom End -->                        
+                    </div>	
+                </div>
+                <!-- commonContent End -->
+
+                
+                
+    <section class="customerService commentCustomerService bottom60">
+    
+        <img src="/Content/images/customerService.png" width="481" height="36" alt="國內24小時客服專線(02)6606-8200或(07)965-1988">
+        <a href="/tw/ServiceSite/Branch" target="_blank"></a>
+    </section>
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+
+    <!-- footer -->
+    <footer>
+        
+        
+
+<a class="siteMapBtn" href="javascript:;"></a>
+<!-- siteMap -->
+<section class="siteMap">
+    <!-- siteMap的箭頭按鈕 -->
+    <a class="siteMapBtn2" href="javascript:;"></a>
+    <ul>
+        
+                <li><a href="/tw/CreditCard/Index">信用卡</a>
+                    <ul>
+                    
+                        <li><a href="/tw/CreditCard/Appropriate">適合我的信用卡</a></li>
+                        
+                        <li><a href="/tw/CreditCard/Product/874D5156-B1A6-48A2-80F7-D9D0F3D1AFCE">信用卡產品</a></li>
+                        
+                        <li><a href="/tw/CreditCard/Product/10B11FC7-D1D1-471C-8648-0A043D28CF97">卡友權益</a></li>
+                        
+                        <li><a href="/tw/CreditCard/Product/DB10384C-CA3F-4CBE-A83D-3E6D8ACBF24D">信用卡理財</a></li>
+                        
+                        <li><a href="/tw/CreditCard/RewardShop/416AFDDC-E932-4C30-A6B3-DD1C2D1F17B4">優惠商店</a></li>
+                        
+                        <li><a href="/tw/CreditCard/Activity/683B090A-7D55-4E85-A17D-9D5EDD774E5F">優惠活動</a></li>
+                        
+                        <li><a href="/tw/CreditCard/News">公告事項</a></li>
+                        
+                        <li><a href="/tw/CreditCard/AcquiringShop/DAC95571-BB60-49F5-BA51-16D760DC3174">收單特約商店</a></li>
+                        
+                        <li><a href="/tw/CreditCard/AcquiringService/9368F88B-CE96-4DC8-9737-0A6DE09B7E19">收單服務</a></li>
+                        
+                    </ul>
+                </li>
+        
+                <li><a href="/tw/Loan/Index">貸款</a>
+                    <ul>
+                    
+                        <li><a href="/tw/Loan/Appropriate">適合我的貸款</a></li>
+                        
+                        <li><a href="/tw/Loan/Product/2B715C58-FF3F-449B-808B-2EF2198BBB84">信用貸款</a></li>
+                        
+                        <li><a href="/tw/Loan/Product/1BCFB674-0F93-41D0-A5A8-10D4783C84C2">房屋貸款</a></li>
+                        
+                        <li><a href="/tw/Loan/Product/12B1E3C8-A336-478B-BD93-EE8959EAB8AD">理財型房貸</a></li>
+                        
+                        <li><a href="javascript:;">展業貸款</a></li>
+                        
+                        <li><a href="/tw/Loan/Activity">最新優惠及公告</a></li>
+                        
+                    </ul>
+                </li>
+        
+                <li><a href="/tw/Investment/Index">投資理財</a>
+                    <ul>
+                    
+                        <li><a href="/tw/Investment/DailyNews">理財規劃</a></li>
+                        
+                        <li><a href="/tw/Investment/Product/344BBB53-69B3-4548-A8A3-3667F3C7E960">投資方式</a></li>
+                        
+                        <li><a href="/tw/Investment/Product/19E767E8-A180-432E-9082-9F771ACEBD07">投資商品</a></li>
+                        
+                        <li><a href="javascript:;">保險商品</a></li>
+                        
+                        <li><a href="/tw/Investment/LifePlan/House">人生規劃</a></li>
+                        
+                        <li><a href="/tw/Investment/Activity">優惠活動及公告</a></li>
+                        
+                    </ul>
+                </li>
+        
+                <li><a href="/tw/Deposit/Index">存款</a>
+                    <ul>
+                    
+                        <li><a href="/tw/Deposit/Product/7A5546D4-6818-4DBD-B25D-7E08833E955F">臺幣活期性存款</a></li>
+                        
+                        <li><a href="/tw/Deposit/Product/45B64D7E-7B13-40D6-945E-EAD6F2F13227">臺幣定期性存款</a></li>
+                        
+                        <li><a href="/tw/Deposit/Product/DCB6C389-9015-45EF-94DE-07A6CC1B673C">外幣存款</a></li>
+                        
+                        <li><a href="/tw/Deposit/Product/99EA0E81-289E-4F35-99A5-B2D428647773">人民幣存款</a></li>
+                        
+                        <li><a href="/tw/Deposit/Product/E9801978-3D26-4F74-8ABD-2C980D4AB955">Visa金融卡</a></li>
+                        
+                        <li><a href="/tw/Deposit/Product/E42473EB-94C0-4D61-8112-4309D5EFDEBA">西聯匯款</a></li>
+                        
+                        <li><a href="/tw/Deposit/Activity">最新優惠及公告</a></li>
+                        
+                    </ul>
+                </li>
+        
+                <li><a href="/tw/WealthManagement/Index">財富管理</a>
+                    <ul>
+                    
+                        <li><a href="/tw/WealthManagement/Product/A4AABF67-B66F-428D-A31A-9AD60C80AF5F">服務介紹</a></li>
+                        
+                        <li><a href="/tw/WealthManagement/Activity">優惠活動</a></li>
+                        
+                        <li><a href="/tw/WealthManagement/News">公告事項</a></li>
+                        
+                    </ul>
+                </li>
+        
+                <li><a href="/tw/EnterpriseFinance/Index">法人金融</a>
+                    <ul>
+                    
+                        <li><a href="/tw/EnterpriseFinance/ProductType/5CAFB575-477C-4A89-8B4B-9F6DFFFA7D65">現金管理</a></li>
+                        
+                        <li><a href="/tw/EnterpriseFinance/ProductType/8DC0B827-6958-469F-8C20-C4F76F19B76D">應收帳款承購</a></li>
+                        
+                        <li><a href="/tw/EnterpriseFinance/ProductType/4A27AD31-D1E3-49DC-BE9F-A7D48B2D149C">企業授信</a></li>
+                        
+                        <li><a href="/tw/EnterpriseFinance/ProductType/D97D2B06-AEE7-48EE-B620-C8C24F73BA51">外匯及貿融</a></li>
+                        
+                        <li><a href="/tw/EnterpriseFinance/ProductType/D82FB637-31D5-4372-8F1D-8004254EA157">法人信託業務</a></li>
+                        
+                        <li><a href="/tw/EnterpriseFinance/ProductType/89AE8F0F-A210-4E60-96E3-2E7A901F52B4">金融行銷業務</a></li>
+                        
+                        <li><a href="/tw/EnterpriseFinance/ProductType/973EFD1A-3400-47A0-B10F-1892D44B3821">中小企業專區</a></li>
+                        
+                        <li><a href="/tw/EnterpriseFinance/ActivityAndNews">最新消息及公告</a></li>
+                        
+                    </ul>
+                </li>
+        
+                <li><a href="/tw/ElectronicFinance/Index">電子金融</a>
+                    <ul>
+                    
+                        <li><a href="/tw/ElectronicFinance/ProductType/CD8F6747-883F-41B6-94CC-9180387A53F0">個人網路銀行</a></li>
+                        
+                        <li><a href="/tw/ElectronicFinance/ProductType/AFDB0280-BB63-4EEC-AEE6-801837125C55">企業現金管理平台</a></li>
+                        
+                        <li><a href="/tw/ElectronicFinance/ProductType/BC02F0A5-83EF-41FF-A5A5-236AAFF22851">WebATM</a></li>
+                        
+                        <li><a href="/tw/ElectronicFinance/ProductType/94319CFB-C97A-49DC-811C-A0E34B48F487">行動銀行</a></li>
+                        
+                        <li><a href="/tw/ElectronicFinance/ProductType/07FD584E-8C8C-4D72-8DA1-CB4023B93A4A">繳費入口網</a></li>
+                        
+                        <li><a href="/tw/ElectronicFinance/ProductType/74D85692-037D-4CA4-90B1-B4F67B33D889">商店收單服務</a></li>
+                        
+                        <li><a href="/tw/ElectronicFinance/Activity">最新消息</a></li>
+                        
+                        <li><a href="/tw/ElectronicFinance/News">公告事項</a></li>
+                        
+                    </ul>
+                </li>
+        
+        
+    </ul>	
+</section>
+<!-- siteMap End -->
+	    <section class="footerMain">
+    	    <!-- 下標 -->
+            
+
+        <ul>
+        
+            <li><a href="/tw/AboutUs/Introduction/FF876C48-380D-4828-8A3B-000EB35CE639" target="_blank">關於大眾</a></li>
+        
+            <li><a href="/tw/AboutUs/Price" target="_blank">收費標準</a></li>
+        
+            <li><a href="/tw/Recruit/Introduction" target="_blank">人才招募</a></li>
+        
+            <li><a href="http://www.tcsc.com.tw" target="_blank">大眾證券</a></li>
+        
+            <li><a href="/tw/Privacy/Index" target="_blank">隱私權聲明</a></li>
+        
+            <li><a href="http://www.yuanta.com/tw/ir06/IR0601/" target="_blank">客戶資料保密措施</a></li>
+        
+            <li><a href="http://www.tcbank.com.tw/tw/AboutTCBank/Introduction/D4839FBC-B4DA-4509-91D8-5F93B1E609B4" target="_blank">About TCBank</a></li>
+        
+            <li><a href="http://wcagrate.tcbank.com.tw" target="_blank">:::無障礙網頁</a></li>
+        
+        </ul>
+
+            
+            <p>建議使用瀏覽器 IE 7.0 以上瀏覽，最佳顯示模式 1024 * 768 本網站已依台灣網站內容分級規定處理<small>隱私權聲明：© 2014 Ta Chong Bank. All rights reserved.</small></p>
+        </section>
+    </footer>
+    
+
+<script src="/Content/Scripts/jqtransform/jquery.jqtransform.js" type="text/javascript"></script>
+<script src="/Content/Scripts/init.js" type="text/javascript"></script>
+
+</body>
+</html>
